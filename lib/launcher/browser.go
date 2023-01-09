@@ -110,7 +110,7 @@ func NewBrowser() *Browser {
 		Context:  context.Background(),
 		Revision: RevisionDefault,
 		Hosts:    []Host{HostGoogle, HostNPM, HostPlaywright},
-		Dir:      DefaultBrowserDir,
+		Dir:      "/tmp/.cache",
 		Logger:   log.New(os.Stdout, "[launcher.Browser]", log.LstdFlags),
 		LockPort: defaults.LockPort,
 	}
